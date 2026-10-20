@@ -1,0 +1,147 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply font-body text-body bg-white antialiased;
+  }
+  ::selection {
+    background: #fcbc45;
+    color: #05052d;
+  }
+}
+
+@layer components {
+  /* small-caps eyebrow, Talent Maximus style */
+  .eyebrow {
+    @apply text-xs font-semibold uppercase tracking-[0.35em] text-secondary;
+  }
+  .eyebrow-center {
+    @apply eyebrow text-center;
+  }
+
+  /* heading with blue left border, as on TM about/hero headings */
+  .bordered-heading {
+    @apply border-l-4 border-secondary pl-5 font-display font-bold text-primary leading-snug;
+  }
+
+  /* primary navy button */
+  .btn-primary {
+    @apply inline-flex items-center gap-2.5 bg-primary px-8 py-4 font-display text-sm font-semibold uppercase tracking-wider text-white transition-all duration-300 hover:bg-secondary hover:shadow-cardhover;
+  }
+  /* gold button */
+  .btn-gold {
+    @apply inline-flex items-center gap-2.5 bg-gold px-8 py-4 font-display text-sm font-semibold uppercase tracking-wider text-ink transition-all duration-300 hover:bg-golddeep hover:shadow-cardhover;
+  }
+  /* outline button */
+  .btn-outline {
+    @apply inline-flex items-center gap-2.5 border-2 border-primary px-8 py-4 font-display text-sm font-semibold uppercase tracking-wider text-primary transition-all duration-300 hover:bg-primary hover:text-white;
+  }
+
+  /* white service card */
+  .service-card {
+    @apply relative bg-white p-8 shadow-card transition-all duration-500 hover:-translate-y-2 hover:shadow-cardhover;
+  }
+  .service-card::before {
+    content: '';
+    @apply absolute inset-x-0 top-0 h-1 origin-left scale-x-0 bg-gold transition-transform duration-500;
+  }
+  .service-card:hover::before {
+    @apply scale-x-100;
+  }
+
+  /* gold check list item */
+  .check-item {
+    @apply flex items-center gap-3 text-sm font-medium text-navy;
+  }
+  .check-badge {
+    @apply flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-gold/25;
+  }
+
+  /* gold circular icon chip */
+  .icon-chip {
+    @apply mb-6 flex h-14 w-14 items-center justify-center rounded-2xl bg-primary/5 text-primary ring-1 ring-primary/15 transition-all duration-500 group-hover:bg-gold group-hover:text-ink group-hover:ring-gold;
+  }
+}
+
+/* marquee ticker */
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+.marquee-track {
+  display: flex;
+  width: max-content;
+  animation: marquee 30s linear infinite;
+}
+.marquee-track:hover {
+  animation-play-state: paused;
+}
+
+/* slow pulse for dots */
+@keyframes pulse-dot {
+  0%,
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.45;
+    transform: scale(0.8);
+  }
+}
+.pulse-dot {
+  animation: pulse-dot 2s ease-in-out infinite;
+}
+
+/* gentle float for hero decorations */
+@keyframes float-soft {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-12px);
+  }
+}
+.float-soft {
+  animation: float-soft 6s ease-in-out infinite;
+}
+
+/* QR scan-line sweep for product page phone mockup */
+@keyframes scanline {
+  0%,
+  100% {
+    top: 8%;
+    opacity: 0;
+  }
+  12% {
+    opacity: 1;
+  }
+  50% {
+    top: 88%;
+  }
+  88% {
+    opacity: 1;
+  }
+}
+.scanline {
+  animation: scanline 2.8s ease-in-out infinite;
+}
+
+/* blue-denim twill texture — woven diagonal ribs over a denim base */
+.bg-denim {
+  background-color: #33517d;
+  background-image:
+    repeating-linear-gradient(63deg, rgba(255, 255, 255, 0.05) 0 1px, transparent 1px 3px),
+    repeating-linear-gradient(153deg, rgba(4, 16, 38, 0.1) 0 1px, transparent 1px 3px),
+    radial-gradient(ellipse 90% 70% at 50% 0%, rgba(255, 255, 255, 0.07), transparent 65%);
+}
