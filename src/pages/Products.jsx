@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { QrCode, HardHat, Boxes, Link2, Waves, Handshake, ArrowRight, ArrowUpRight, ShoppingCart, PackageCheck } from 'lucide-react';
+import { QrCode, HardHat, Boxes, Link2, Waves, Handshake, ArrowRight, ArrowUpRight, ShoppingCart, PackageCheck, LayoutGrid } from 'lucide-react';
 import { reveal, SectionHead } from '../product/scanitsimple/shared';
 
 const PRODUCTS = [
@@ -50,14 +50,6 @@ const PRODUCTS = [
     a: '#0E9F8A',
   },
   {
-    icon: Link2,
-    name: 'SmartLink',
-    tagline: 'Supply Chain Solutions',
-    desc: 'End-to-end procurement, warehousing and logistics visibility with a mini-ERP that integrates with your existing stack.',
-    live: false,
-    a: '#7C5CD6',
-  },
-  {
     icon: Waves,
     name: 'SmartWave',
     tagline: 'Every Member. Every Venture. Every Community.',
@@ -67,12 +59,28 @@ const PRODUCTS = [
     a: '#E8A020',
   },
   {
+    icon: Link2,
+    name: 'SmartLink',
+    tagline: 'Supply Chain Solutions',
+    desc: 'End-to-end procurement, warehousing and logistics visibility with a mini-ERP that integrates with your existing stack.',
+    live: false,
+    a: '#7C5CD6',
+  },
+  {
     icon: Handshake,
     name: 'SmartFlow',
     tagline: 'Vendor Management',
     desc: 'Structured vendor prequalification, onboarding, evaluation and compliance tracking across your vendor base.',
     live: false,
     a: '#D64550',
+  },
+  {
+    icon: LayoutGrid,
+    name: 'xBeyond ERP',
+    tagline: 'CRM · HRM · GL · AP · AR',
+    desc: 'The core ERP suite — customer relationships, HR, general ledger, payables and receivables — completing the xBeyond-EPC Stack.',
+    live: false,
+    a: '#0A1B33',
   },
 ];
 
@@ -150,7 +158,7 @@ export default function Products() {
                         Explore Product <ArrowRight size={15} className="transition-transform duration-300 group-hover:translate-x-1" />
                       </span>
                     ) : (
-                      <span className="text-body/50">Product page in the works</span>
+                      <span className="text-body/50">Coming soon — on the works!</span>
                     )}
                   </div>
                 </>
