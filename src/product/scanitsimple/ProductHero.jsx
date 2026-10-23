@@ -99,7 +99,7 @@ function PhoneMock() {
         {/* camera view */}
         <div className="relative px-5 pb-6 pt-12">
           <div className="flex items-center justify-between text-[10px] font-semibold uppercase tracking-widest text-white/50">
-            <span>ScanItSimple</span>
+            <span>SmartTagScan</span>
             <span className="flex items-center gap-1 text-gold">
               <ScanLine size={11} /> Scanning
             </span>
@@ -174,7 +174,7 @@ export default function ProductHero() {
             </motion.p>
 
             <motion.h1 {...fade(0.15)} className="bordered-heading text-5xl !text-white sm:text-6xl xl:text-[4.2rem]">
-              ScanItSimple
+              SmartTag<span className="text-gold">Scan</span>
             </motion.h1>
 
             <motion.p {...fade(0.25)} className="mt-4 font-display text-xl font-semibold uppercase tracking-[0.18em] text-gold">
@@ -186,13 +186,13 @@ export default function ProductHero() {
             </motion.div>
 
             <motion.p {...fade(0.5)} className="mt-5 max-w-xl text-lg leading-relaxed text-white/75">
-              ScanItSimple turns any smartphone into an enterprise asset scanner — QR-tagged registers, role-based
+              SmartTagScan turns any smartphone into an enterprise asset scanner — QR-tagged registers, role-based
               access, custody chains and calibration compliance in one secure, centralized workspace. Purpose-built
               for <span className="font-semibold text-white">construction &amp; EPC</span>, ready for every industry.
             </motion.p>
 
             <motion.div {...fade(0.65)} className="mt-9 flex flex-wrap items-center gap-4">
-              <a href="mailto:contact@xbeyond.online?subject=ScanItSimple%20Demo%20Request" className="btn-gold">
+              <a href="mailto:contact@xbeyond.online?subject=SmartTagScan%20Demo%20Request" className="btn-gold">
                 Book a Live Demo <ArrowRight size={17} />
               </a>
               <a

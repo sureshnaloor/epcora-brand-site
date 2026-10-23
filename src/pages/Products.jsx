@@ -6,7 +6,7 @@ import { reveal, SectionHead } from '../product/scanitsimple/shared';
 const PRODUCTS = [
   {
     icon: QrCode,
-    name: 'ScanItSimple',
+    name: 'SmartTagScan',
     tagline: 'Every Asset. One Scan. Total Control.',
     desc: 'QR-driven asset intelligence — registers, role-based access, custody chains, calibration compliance and a live operations dashboard.',
     href: '/products/scanitsimple',
@@ -88,7 +88,7 @@ export default function Products() {
   return (
     <>
       {/* hero band */}
-      <section className="bg-denim relative overflow-hidden">
+      <section id="top" className="bg-denim relative overflow-hidden">
         <div
           className="pointer-events-none absolute inset-0 opacity-[0.05]"
           style={{ backgroundImage: 'repeating-linear-gradient(115deg, #fff 0 2px, transparent 2px 90px)' }}

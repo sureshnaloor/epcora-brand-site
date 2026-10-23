@@ -106,7 +106,7 @@ const STEPS = [
     icon: Tag,
     step: '01',
     title: 'Tag It',
-    desc: 'Attach a durable, uniquely coded ScanItSimple QR label to every tool, machine and instrument. Batch-generate branded, print-ready labels from the register.',
+    desc: 'Attach a durable, uniquely coded SmartTagScan QR label to every tool, machine and instrument. Batch-generate branded, print-ready labels from the register.',
   },
   {
     icon: ScanLine,
@@ -162,7 +162,7 @@ export function HowItWorks() {
         <SectionHead
           eyebrow="How it works"
           title="From label to live intelligence in four steps"
-          sub="ScanItSimple bridges the gap between physical assets and a secure, centralized database — connecting every scan to the right person, the right data and the right action."
+          sub="SmartTagScan bridges the gap between physical assets and a secure, centralized database — connecting every scan to the right person, the right data and the right action."
         />
 
         <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-4">
@@ -198,7 +198,7 @@ export function HowItWorks() {
               </h3>
             </div>
             <p className="max-w-md text-sm leading-relaxed text-white/70">
-              ScanItSimple protects sensitive operational data by serving user-specific detail the moment a QR code is
+              SmartTagScan protects sensitive operational data by serving user-specific detail the moment a QR code is
               scanned — everyone sees exactly what their clearance allows.
             </p>
           </div>

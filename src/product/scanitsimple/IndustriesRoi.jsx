@@ -80,7 +80,7 @@ export default function IndustriesRoi() {
           <SectionHead
             eyebrow="Built to scale across industries"
             title="One platform, every asset-heavy operation"
-            sub="ScanItSimple adapts its registers, fields and workflows to the asset category — not the other way around."
+            sub="SmartTagScan adapts its registers, fields and workflows to the asset category — not the other way around."
           />
           <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {INDUSTRIES.map((ind, i) => (
@@ -118,7 +118,7 @@ export default function IndustriesRoi() {
           <SectionHead
             dark
             center
-            eyebrow="The ROI of ScanItSimple"
+            eyebrow="The ROI of SmartTagScan"
             title="Accountability you can measure"
           />
           <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
@@ -156,7 +156,7 @@ export default function IndustriesRoi() {
                 <div className="absolute -left-5 -top-5 h-28 w-28 border-8 border-gold/70" />
                 <img
                   src={`${IMG}/qr-code-design.jpg`}
-                  alt="Branded ScanItSimple QR asset labels"
+                  alt="Branded SmartTagScan QR asset labels"
                   loading="lazy"
                   className="relative w-full object-cover shadow-cardhover"
                   style={{ height: 300 }}

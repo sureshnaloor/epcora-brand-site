@@ -116,6 +116,29 @@
   animation: float-soft 6s ease-in-out infinite;
 }
 
+/* extruded 3D wordmark for the EPCORA footer sign-off */
+.text-3d-gold {
+  color: #fcbc45;
+  text-shadow:
+    0 1px 0 #b97f10,
+    0 2px 0 #a9730e,
+    0 3px 0 #98670c,
+    0 4px 0 #875b0b,
+    0 5px 0 #765009,
+    0 6px 0 #654408,
+    0 7px 16px rgba(0, 0, 0, 0.55);
+}
+
+/* floor shadow under the 3D mark */
+.mark-floor-shadow {
+  width: 64%;
+  height: 10px;
+  margin: 10px auto 0;
+  border-radius: 9999px;
+  background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.5), transparent 70%);
+  filter: blur(2px);
+}
+
 /* QR scan-line sweep for product page phone mockup */
 @keyframes scanline {
   0%,

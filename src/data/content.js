@@ -73,7 +73,7 @@ export const stats = [
 ];
 
 export const footerServices = [
-  { name: 'Asset Management', tag: 'SmartTag' },
+  { name: 'Asset Management', tag: 'SmartTagScan' },
   { name: 'Project Management', tag: 'SmartProject' },
   { name: 'Materials Cataloguing', tag: 'SmartClass' },
   { name: 'Supply Chain Solutions', tag: 'SmartLink' },
@@ -82,19 +82,20 @@ export const footerServices = [
 ];
 
 export const footerProducts = [
-  { name: 'ScanItSimple', tag: 'Asset Intelligence', href: '/products/scanitsimple' },
+  { name: 'SmartTagScan', tag: 'Asset Intelligence', href: '/products/scanitsimple' },
   { name: 'SmartProject', tag: 'Project Controls', href: '/products/smartproject' },
   { name: 'SmartProcureSimple', tag: 'Vendor Bidding', href: '/products/smartprocuresimple' },
   { name: 'SmartExpediteSimple', tag: 'Post-PO Expediting', href: '/products/smartexpeditesimple' },
   { name: 'SmartClass', tag: 'Materials Intelligence', href: '/products/smartclass' },
-  { name: 'SmartLink', tag: 'Coming soon' },
   { name: 'SmartWave', tag: 'Community & Commerce', href: '/products/smartwave' },
-  { name: 'SmartFlow', tag: 'Coming soon' },
+  { name: 'SmartLink', tag: 'On the works' },
+  { name: 'SmartFlow', tag: 'On the works' },
+  { name: 'xBeyond ERP', tag: 'On the works' },
 ];
 
 export const serviceDetails = [
   {
-    product: 'SmartTag',
+    product: 'SmartTagScan',
     title: 'Asset Management',
     summary: 'Asset Management services',
     desc: 'Intelligent asset tracking and maintenance that helps companies monitor, maintain, and optimize their movable assets with real-time insights and predictive analytics.',

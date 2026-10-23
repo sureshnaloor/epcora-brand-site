@@ -1,6 +1,40 @@
 import { Twitter, Linkedin, Facebook } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import { motion, useReducedMotion } from 'framer-motion';
 import { footerServices, footerProducts } from '../data/content';
+
+/* Extruded 3D EPCORA mark — stacked layers in Z-space, slow perspective swing */
+const MARK_LAYERS = 8;
+
+function Mark3D() {
+  const reduce = useReducedMotion();
+  return (
+    <div style={{ perspective: 800 }}>
+      <motion.div
+        animate={reduce ? undefined : { rotateY: 360 }}
+        transition={{ duration: 14, repeat: Infinity, ease: 'linear' }}
+        style={{ transformStyle: 'preserve-3d', rotateX: 6 }}
+        className="relative h-24 w-24"
+      >
+        {Array.from({ length: MARK_LAYERS }).map((_, i) => (
+          <img
+            key={i}
+            src="/images/epcora-mark-dark.svg"
+            alt={i === 0 ? 'EPCORA' : ''}
+            aria-hidden={i !== 0}
+            draggable={false}
+            className="absolute inset-0 h-full w-full select-none"
+            style={{
+              transform: `translateZ(${-i * 3}px)`,
+              filter: i === 0 ? 'none' : 'brightness(0.32) saturate(0.85)',
+            }}
+          />
+        ))}
+      </motion.div>
+      <div className="mark-floor-shadow" />
+    </div>
+  );
+}
 
 export default function Footer() {
   return (
@@ -8,9 +42,7 @@ export default function Footer() {
       <div className="mx-auto grid max-w-7xl gap-12 px-6 md:grid-cols-[1.3fr_1fr_1fr_1fr_1fr]">
         <div>
           <div className="mb-5 flex items-center gap-3">
-            <div className="rounded-xl bg-white p-1.5">
-              <img src="/images/epcstack_logo_b.png" alt="xBeyond-EPC Stack Logo" className="h-8 w-auto object-contain" />
-            </div>
+            <img src="/images/epcora-mark-dark.svg" alt="EPCORA logo" className="h-9 w-auto object-contain" />
             <span className="font-display text-xl font-extrabold text-white">
               x<span className="text-gold">Beyond</span>-EPC Stack
             </span>
@@ -87,7 +119,16 @@ export default function Footer() {
         </div>
       </div>
 
-      <div className="mx-auto mt-14 flex max-w-7xl flex-col justify-between gap-3 border-t border-white/10 px-6 pt-6 text-xs text-white/40 sm:flex-row">
+      {/* EPCORA lockup — the company behind the stack */}
+      <div className="mx-auto mt-14 flex max-w-7xl flex-col items-center gap-3 border-t border-white/10 px-6 pb-4 pt-12 text-center">
+        <Mark3D />
+        <div className="text-3d-gold font-display text-3xl font-extrabold tracking-[0.3em]">EPCORA</div>
+        <div className="font-display text-[10px] font-semibold uppercase tracking-[0.35em] text-white/50 [text-shadow:0_2px_6px_rgba(0,0,0,0.6)]">
+          Engineer · Procure · Construct
+        </div>
+      </div>
+
+      <div className="mx-auto mt-10 flex max-w-7xl flex-col justify-between gap-3 border-t border-white/10 px-6 pt-6 text-xs text-white/40 sm:flex-row">
         <span>© 2026 xBeyond-EPC Stack. All rights reserved.</span>
         <span>Digital Transformation Solutions for Construction &amp; EPC</span>
       </div>
