@@ -93,7 +93,7 @@ export default function ServiceDetails() {
                     </div>
                     <div className="mx-auto mt-4 h-0.5 w-14 bg-gold" />
                     <div className="mt-4 text-sm font-semibold uppercase tracking-[0.3em] text-white/70">
-                      Part of the xBeyond-EPC Stack
+                      Part of the EPCORA-EPC Stack
                     </div>
                   </div>
                 </div>

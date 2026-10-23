@@ -101,7 +101,7 @@ export default function Footer() {
           <h4 className="mb-5 font-display text-sm font-bold uppercase tracking-[0.2em] text-white">Company</h4>
           <div className="mb-5 h-0.5 w-10 bg-secondary" />
           <ul className="space-y-3 text-sm">
-            <li><Link to="/#why-xbeyond" className="transition-colors hover:text-gold">Why xBeyond-EPC Stack</Link></li>
+            <li><Link to="/#why-xbeyond" className="transition-colors hover:text-gold">Why EPCORA-EPC Stack</Link></li>
             <li><Link to="/#founder" className="transition-colors hover:text-gold">About Us</Link></li>
             <li><Link to="/#contact" className="transition-colors hover:text-gold">Careers</Link></li>
             <li><Link to="/#contact" className="transition-colors hover:text-gold">Contact</Link></li>
@@ -129,7 +129,7 @@ export default function Footer() {
       </div>
 
       <div className="mx-auto mt-10 flex max-w-7xl flex-col justify-between gap-3 border-t border-white/10 px-6 pt-6 text-xs text-white/40 sm:flex-row">
-        <span>© 2026 xBeyond-EPC Stack. All rights reserved.</span>
+        <span>© 2026 EPCORA-EPC Stack. All rights reserved.</span>
         <span>Digital Transformation Solutions for Construction &amp; EPC</span>
       </div>
     </footer>

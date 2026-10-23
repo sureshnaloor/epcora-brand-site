@@ -7,7 +7,7 @@ const links = [
   { label: 'Services', href: '/#services' },
   { label: 'Products', href: '/products' },
   { label: 'Industries', href: '/#industries' },
-  { label: 'Why xBeyond-EPC Stack', href: '/#why-xbeyond' },
+  { label: 'Why EPCORA-EPC Stack', href: '/#why-xbeyond' },
   { label: 'Founder', href: '/#founder' },
   { label: 'Contact', href: '/#contact' },
 ];
@@ -24,15 +24,14 @@ export default function Nav() {
 
   return (
     <header
-      className={`sticky top-0 z-50 border-b bg-white/95 backdrop-blur transition-shadow duration-300 ${
-        scrolled ? 'border-line shadow-card' : 'border-transparent'
-      }`}
+      className={`sticky top-0 z-50 border-b bg-white/95 backdrop-blur transition-shadow duration-300 ${scrolled ? 'border-line shadow-card' : 'border-transparent'
+        }`}
     >
       <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
         <Link to="/#top" className="flex items-center gap-3">
           <img src="/images/epcora-mark.svg" alt="EPCORA logo" className="h-10 w-auto object-contain" />
           <span className="font-display text-xl font-extrabold tracking-tight text-primary">
-            x<span className="text-secondary">Beyond</span>-EPC Stack
+            <span className="text-secondary">EPCORA</span>-EPC Stack
           </span>
         </Link>
 

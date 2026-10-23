@@ -13,13 +13,13 @@ export default function WhyUs() {
     <section id="why-xbeyond" className="bg-denim scroll-mt-24 py-24">
       <div className="mx-auto max-w-7xl px-6">
         <motion.div {...reveal} className="mx-auto max-w-2xl text-center">
-          <div className="eyebrow-center mb-4 !text-gold">Why xBeyond-EPC Stack</div>
+          <div className="eyebrow-center mb-4 !text-gold">Why EPCORA-EPC Stack</div>
           <h2 className="font-display text-4xl font-bold leading-tight text-white sm:text-5xl">
             Built different, <span className="text-gold">on purpose</span>
           </h2>
           <p className="mt-5 text-lg text-white/70">
-            Compatibility, accountability, and transparency are the xBeyond-EPC Stack approach.
-          </p>
+            Compatibility, accountability, and transparency are the approach.
+          </p>EPCORA-EPC Stack
           <div className="mx-auto mt-6 h-1 w-16 bg-gold" />
         </motion.div>
 

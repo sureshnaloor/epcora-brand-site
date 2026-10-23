@@ -113,7 +113,7 @@ export default function Products() {
             className="mt-6 max-w-2xl text-lg leading-relaxed text-white/75"
           >
             Purpose-built products for construction &amp; EPC — from asset intelligence and project controls to supply
-            chain and vendor ecosystems. Each one stands alone; together they are the xBeyond-EPC Stack.
+            chain and vendor ecosystems. Each one stands alone; together they are the EPCORA-EPC Stack.
           </motion.p>
         </div>
       </section>
