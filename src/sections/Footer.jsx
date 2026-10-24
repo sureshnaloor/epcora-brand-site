@@ -44,11 +44,11 @@ export default function Footer() {
           <div className="mb-5 flex items-center gap-3">
             <img src="/images/epcora-mark-dark.svg" alt="EPCORA logo" className="h-9 w-auto object-contain" />
             <span className="font-display text-xl font-extrabold text-white">
-              x<span className="text-gold">Beyond</span>-EPC Stack
+              <span className="text-gold">EPCORA</span>-EPC Stack
             </span>
           </div>
           <p className="max-w-xs text-sm leading-relaxed">
-            Empowering businesses with decades of industry expertise and innovative digital solutions.
+            contact@epcora.com
           </p>
           <div className="mt-6 flex gap-3">
             {[Twitter, Linkedin, Facebook].map((Icon, i) => (
@@ -125,6 +125,7 @@ export default function Footer() {
         <div className="text-3d-gold font-display text-3xl font-extrabold tracking-[0.3em]">EPCORA</div>
         <div className="font-display text-[10px] font-semibold uppercase tracking-[0.35em] text-white/50 [text-shadow:0_2px_6px_rgba(0,0,0,0.6)]">
           Engineer · Procure · Construct
+          <span className="block italic text-gold/50 contrast-more:text-gold/80 lowercase"> agentically</span>
         </div>
       </div>
 

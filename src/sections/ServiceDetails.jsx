@@ -20,7 +20,7 @@ export default function ServiceDetails() {
             Every solution, <span className="text-secondary">in detail</span>
           </h2>
           <p className="mt-5 text-lg text-body">
-            Each product in the xBeyond-EPC Stack family is purpose-built for construction and EPC — and they all
+            Each product in the x-EPC Stack family is purpose-built for construction and EPC — and they all
             work better together.
           </p>
           <div className="mx-auto mt-6 h-1 w-16 bg-gold" />

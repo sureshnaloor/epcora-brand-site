@@ -78,7 +78,7 @@ const PRODUCTS = [
     icon: LayoutGrid,
     name: 'xBeyond ERP',
     tagline: 'CRM · HRM · GL · AP · AR',
-    desc: 'The core ERP suite — customer relationships, HR, general ledger, payables and receivables — completing the xBeyond-EPC Stack.',
+    desc: 'The core ERP suite — customer relationships, HR, general ledger, payables and receivables — completing the x-EPC Stack.',
     live: false,
     a: '#0A1B33',
   },
