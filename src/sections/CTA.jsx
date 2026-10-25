@@ -32,7 +32,7 @@ export default function CTA() {
             your construction business.
           </p>
           <div className="mt-10 flex flex-wrap justify-center gap-4">
-            <a href="mailto:contact@xbeyond.online" className="btn-gold">
+            <a href="mailto:contact@epcora.com" className="btn-gold">
               Contact Our Team <ArrowRight size={17} />
             </a>
             <a

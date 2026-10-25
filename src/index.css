@@ -116,6 +116,32 @@
   animation: float-soft 6s ease-in-out infinite;
 }
 
+/* standout Products link in the nav — gold, larger, 3D-shaded, underline sweep */
+.nav-products {
+  position: relative;
+  color: #e8a020;
+  font-size: 15px;
+  text-shadow:
+    0 1px 0 #b97f10,
+    0 2px 4px rgba(0, 0, 0, 0.15);
+}
+.nav-products::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  height: 2px;
+  width: 100%;
+  background: linear-gradient(90deg, #fcbc45, #e8730c);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.35s ease;
+}
+.nav-products:hover::after,
+.group:hover .nav-products::after {
+  transform: scaleX(1);
+}
+
 /* extruded 3D wordmark for the EPCORA footer sign-off */
 .text-3d-gold {
   color: #fcbc45;

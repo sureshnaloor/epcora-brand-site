@@ -199,7 +199,7 @@ export default function SPHero() {
             </motion.p>
 
             <motion.div {...fade(0.65)} className="mt-9 flex flex-wrap items-center gap-4">
-              <a href="mailto:contact@xbeyond.online?subject=SmartProject%20Demo%20Request" className="btn-gold">
+              <a href="mailto:contact@epcora.com?subject=SmartProject%20Demo%20Request" className="btn-gold">
                 Book a Live Demo <ArrowRight size={17} />
               </a>
               <a

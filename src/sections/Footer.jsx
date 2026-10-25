@@ -44,11 +44,11 @@ export default function Footer() {
           <div className="mb-5 flex items-center gap-3">
             <img src="/images/epcora-mark-dark.svg" alt="EPCORA logo" className="h-9 w-auto object-contain" />
             <span className="font-display text-xl font-extrabold text-white">
-              <span className="text-gold">EPCORA</span>-EPC Stack
+              EPC<span className="text-gold">ORA</span> Stack
             </span>
           </div>
           <p className="max-w-xs text-sm leading-relaxed">
-            contact@epcora.com
+            Empowering businesses with decades of industry expertise and innovative digital solutions.
           </p>
           <div className="mt-6 flex gap-3">
             {[Twitter, Linkedin, Facebook].map((Icon, i) => (
@@ -101,7 +101,7 @@ export default function Footer() {
           <h4 className="mb-5 font-display text-sm font-bold uppercase tracking-[0.2em] text-white">Company</h4>
           <div className="mb-5 h-0.5 w-10 bg-secondary" />
           <ul className="space-y-3 text-sm">
-            <li><Link to="/#why-xbeyond" className="transition-colors hover:text-gold">Why EPCORA-EPC Stack</Link></li>
+            <li><Link to="/#why-xbeyond" className="transition-colors hover:text-gold">Why EPCORA Stack</Link></li>
             <li><Link to="/#founder" className="transition-colors hover:text-gold">About Us</Link></li>
             <li><Link to="/#contact" className="transition-colors hover:text-gold">Careers</Link></li>
             <li><Link to="/#contact" className="transition-colors hover:text-gold">Contact</Link></li>
@@ -125,12 +125,11 @@ export default function Footer() {
         <div className="text-3d-gold font-display text-3xl font-extrabold tracking-[0.3em]">EPCORA</div>
         <div className="font-display text-[10px] font-semibold uppercase tracking-[0.35em] text-white/50 [text-shadow:0_2px_6px_rgba(0,0,0,0.6)]">
           Engineer · Procure · Construct
-          <span className="block italic text-gold/50 contrast-more:text-gold/80 lowercase"> agentically</span>
         </div>
       </div>
 
       <div className="mx-auto mt-10 flex max-w-7xl flex-col justify-between gap-3 border-t border-white/10 px-6 pt-6 text-xs text-white/40 sm:flex-row">
-        <span>© 2026 EPCORA-EPC Stack. All rights reserved.</span>
+        <span>© 2026 EPCORA Stack. All rights reserved.</span>
         <span>Digital Transformation Solutions for Construction &amp; EPC</span>
       </div>
     </footer>

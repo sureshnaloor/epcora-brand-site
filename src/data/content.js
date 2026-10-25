@@ -90,7 +90,7 @@ export const footerProducts = [
   { name: 'SmartWave', tag: 'Community & Commerce', href: '/products/smartwave' },
   { name: 'SmartLink', tag: 'On the works' },
   { name: 'SmartFlow', tag: 'On the works' },
-  { name: 'xBeyond ERP', tag: 'On the works' },
+  { name: 'EPCORA ERP', tag: 'On the works' },
 ];
 
 export const serviceDetails = [

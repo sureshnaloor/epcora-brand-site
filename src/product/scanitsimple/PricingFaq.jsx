@@ -165,7 +165,7 @@ export default function PricingFaq() {
                   ))}
                 </ul>
                 <a
-                  href={`mailto:contact@xbeyond.online?subject=SmartTagScan%20${encodeURIComponent(p.name)}%20Plan`}
+                  href={`mailto:contact@epcora.com?subject=SmartTagScan%20${encodeURIComponent(p.name)}%20Plan`}
                   className={`${p.highlighted ? 'btn-gold' : 'btn-outline'} mt-8 justify-center !px-6`}
                 >
                   {p.cta}
@@ -209,7 +209,7 @@ export default function PricingFaq() {
               team through a live scan.
             </p>
             <div className="mt-10 flex flex-wrap justify-center gap-4">
-              <a href="mailto:contact@xbeyond.online?subject=SmartTagScan%20Demo%20Request" className="btn-primary">
+              <a href="mailto:contact@epcora.com?subject=SmartTagScan%20Demo%20Request" className="btn-primary">
                 Book a Live Demo <ArrowRight size={17} />
               </a>
               <Link

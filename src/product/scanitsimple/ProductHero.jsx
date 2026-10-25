@@ -192,7 +192,7 @@ export default function ProductHero() {
             </motion.p>
 
             <motion.div {...fade(0.65)} className="mt-9 flex flex-wrap items-center gap-4">
-              <a href="mailto:contact@xbeyond.online?subject=SmartTagScan%20Demo%20Request" className="btn-gold">
+              <a href="mailto:contact@epcora.com?subject=SmartTagScan%20Demo%20Request" className="btn-gold">
                 Book a Live Demo <ArrowRight size={17} />
               </a>
               <a

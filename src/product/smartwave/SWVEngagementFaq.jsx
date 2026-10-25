@@ -129,7 +129,7 @@ export default function SWVEngagementFaq() {
                   ))}
                 </ul>
                 <a
-                  href={`mailto:contact@xbeyond.online?subject=SmartWave%20${encodeURIComponent(m.name)}%20Enquiry`}
+                  href={`mailto:contact@epcora.com?subject=SmartWave%20${encodeURIComponent(m.name)}%20Enquiry`}
                   className={`${m.highlighted ? 'btn-gold' : 'btn-outline'} mt-8 justify-center !px-6`}
                 >
                   Talk to Us
@@ -169,7 +169,7 @@ export default function SWVEngagementFaq() {
               lasting community.
             </p>
             <div className="mt-10 flex flex-wrap justify-center gap-4">
-              <a href="mailto:contact@xbeyond.online?subject=SmartWave%20Demo%20Request" className="btn-primary">
+              <a href="mailto:contact@epcora.com?subject=SmartWave%20Demo%20Request" className="btn-primary">
                 Book a Live Demo <ArrowRight size={17} />
               </a>
               <Link

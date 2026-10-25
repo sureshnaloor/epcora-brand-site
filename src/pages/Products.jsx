@@ -76,9 +76,9 @@ const PRODUCTS = [
   },
   {
     icon: LayoutGrid,
-    name: 'xBeyond ERP',
+    name: 'EPCORA ERP',
     tagline: 'CRM · HRM · GL · AP · AR',
-    desc: 'The core ERP suite — customer relationships, HR, general ledger, payables and receivables — completing the x-EPC Stack.',
+    desc: 'The core ERP suite — customer relationships, HR, general ledger, payables and receivables — completing the EPCORA Stack.',
     live: false,
     a: '#0A1B33',
   },
@@ -113,7 +113,7 @@ export default function Products() {
             className="mt-6 max-w-2xl text-lg leading-relaxed text-white/75"
           >
             Purpose-built products for construction &amp; EPC — from asset intelligence and project controls to supply
-            chain and vendor ecosystems. Each one stands alone; together they are the EPCORA-EPC Stack.
+            chain and vendor ecosystems. Each one stands alone; together they are the EPCORA Stack.
           </motion.p>
         </div>
       </section>
@@ -190,7 +190,7 @@ export default function Products() {
           <motion.div {...reveal}>
             <div className="eyebrow-center mb-4">Not sure where to start?</div>
             <h2 className="font-display text-3xl font-bold text-primary sm:text-4xl">Tell us the problem — we’ll point you at the product.</h2>
-            <a href="mailto:contact@xbeyond.online?subject=Product%20Enquiry" className="btn-primary mt-8">
+            <a href="mailto:contact@epcora.com?subject=Product%20Enquiry" className="btn-primary mt-8">
               Talk to Our Team <ArrowUpRight size={17} />
             </a>
           </motion.div>

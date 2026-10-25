@@ -27,7 +27,7 @@ export default function Practice() {
           </p>
           <div className="mx-auto mt-8 h-1 w-16 bg-gold" />
           <p className="mt-8 text-sm font-semibold uppercase tracking-[0.3em] text-white/60">
-            EPCORA-EPC Stack
+            EPCORA Stack
           </p>
         </motion.div>
       </div>
