@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { ArrowRight } from 'lucide-react';
+import { ArrowRight, MapPin } from 'lucide-react';
 
 const reveal = {
   initial: { opacity: 0, y: 36 },
@@ -41,6 +41,20 @@ export default function CTA() {
             >
               Learn More About Us
             </a>
+          </div>
+
+          {/* physical address */}
+          <div className="mx-auto mt-14 flex max-w-md items-start gap-4 border-t border-white/15 pt-8 text-left">
+            <MapPin size={20} className="mt-1 shrink-0 text-gold" />
+            <p className="text-sm leading-relaxed text-white/80">
+              <span className="font-display text-base font-bold uppercase tracking-wider text-gold">
+                EPCORA Private Limited
+              </span>
+              <br />
+              COVAI Tech Park, Kalapatti,
+              <br />
+              Coimbatore, India 641014
+            </p>
           </div>
         </motion.div>
       </div>

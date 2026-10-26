@@ -19,6 +19,7 @@ import SmartExpedite from './pages/SmartExpedite';
 import SmartWave from './pages/SmartWave';
 import SmartClass from './pages/SmartClass';
 import Products from './pages/Products';
+import ServiceComingSoon from './pages/ServiceComingSoon';
 
 function Home() {
   return (
@@ -75,6 +76,7 @@ export default function App() {
           <Route path="/products/smartexpeditesimple" element={<SmartExpedite />} />
           <Route path="/products/smartwave" element={<SmartWave />} />
           <Route path="/products/smartclass" element={<SmartClass />} />
+          <Route path="/services/:slug" element={<ServiceComingSoon />} />
         </Routes>
       </main>
       <Footer />

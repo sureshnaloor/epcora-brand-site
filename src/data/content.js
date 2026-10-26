@@ -1,5 +1,5 @@
 import {
-  QrCode, HardHat, Boxes, Link2, Nfc, Wrench,
+  QrCode, HardHat, Boxes, Link2, Wrench,
   Zap, Flame, Mountain, Atom, Leaf, Building2,
   ShieldCheck, MapPin, Cpu, Handshake
 } from 'lucide-react';
@@ -32,13 +32,6 @@ export const services = [
     tagline: 'Connect, Control, Succeed',
     desc: 'Comprehensive vendor management and mini-ERP system for streamlined contract management, strategic sourcing, and efficient procurement processes.',
     a: '#7C5CD6',
-  },
-  {
-    icon: Nfc,
-    title: 'Digital Business Cards',
-    tagline: 'Go Green, Stay Connected',
-    desc: 'Eco-friendly NFC-enabled digital business cards that update in real-time, reducing environmental impact while maintaining professional connections.',
-    a: '#E8A020',
   },
   {
     icon: Wrench,
@@ -91,6 +84,15 @@ export const footerProducts = [
   { name: 'SmartLink', tag: 'On the works' },
   { name: 'SmartFlow', tag: 'On the works' },
   { name: 'EPCORA ERP', tag: 'On the works' },
+];
+
+/* Services menu + coming-soon pages */
+export const serviceLinks = [
+  { name: 'Asset Management', tag: 'Tracking & Maintenance', slug: 'asset-management' },
+  { name: 'Construction Management', tag: 'Projects & Controls', slug: 'construction-management' },
+  { name: 'Operations Excellence', tag: 'Inventory & Cataloguing', slug: 'operations-excellence' },
+  { name: 'Supply Chain Solutions', tag: 'Sourcing & Procurement', slug: 'supply-chain-solutions' },
+  { name: 'Industrial Support', tag: 'Maintenance & Logistics', slug: 'industrial-support' },
 ];
 
 export const serviceDetails = [

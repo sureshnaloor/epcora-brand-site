@@ -66,6 +66,19 @@
   .icon-chip {
     @apply mb-6 flex h-14 w-14 items-center justify-center rounded-2xl bg-primary/5 text-primary ring-1 ring-primary/15 transition-all duration-500 group-hover:bg-gold group-hover:text-ink group-hover:ring-gold;
   }
+
+  /* founder card — dull gold, dominant, 3D lift on hover */
+  .founder-card {
+    background: linear-gradient(135deg, #e3c878 0%, #d4af5a 45%, #c19a44 100%);
+    box-shadow: 0 18px 40px -12px rgba(120, 90, 20, 0.35);
+    transition: transform 0.6s cubic-bezier(0.2, 0.8, 0.2, 1), box-shadow 0.6s cubic-bezier(0.2, 0.8, 0.2, 1);
+    transform-style: preserve-3d;
+    will-change: transform;
+  }
+  .founder-card:hover {
+    transform: perspective(1000px) rotateX(3.5deg) rotateY(-3.5deg) translateY(-10px) scale(1.015);
+    box-shadow: 0 38px 70px -16px rgba(120, 90, 20, 0.5);
+  }
 }
 
 /* marquee ticker */
@@ -117,15 +130,15 @@
 }
 
 /* standout Products link in the nav — gold, larger, 3D-shaded, underline sweep */
-.nav-products {
+.nav-highlight {
   position: relative;
-  color: #e8a020;
-  font-size: 15px;
+  color: #f59e0b;
+  font-weight: 700;
   text-shadow:
     0 1px 0 #b97f10,
     0 2px 4px rgba(0, 0, 0, 0.15);
 }
-.nav-products::after {
+.nav-highlight::after {
   content: '';
   position: absolute;
   left: 0;
@@ -137,8 +150,8 @@
   transform-origin: left;
   transition: transform 0.35s ease;
 }
-.nav-products:hover::after,
-.group:hover .nav-products::after {
+.nav-highlight:hover::after,
+.group:hover .nav-highlight::after {
   transform: scaleX(1);
 }
 
