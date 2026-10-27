@@ -193,6 +193,13 @@ export default function Products() {
             <a href="mailto:contact@epcora.com?subject=Product%20Enquiry" className="btn-primary mt-8">
               Talk to Our Team <ArrowUpRight size={17} />
             </a>
+            <div className="mt-10 flex flex-wrap items-center justify-center gap-x-6 gap-y-2 border-t border-line pt-6 text-xs font-semibold uppercase tracking-wider text-body/60">
+              <Link to="/legal/privacy-policy" className="transition-colors hover:text-golddeep">Privacy Policy</Link>
+              <span className="text-body/30">·</span>
+              <Link to="/legal/terms-of-service" className="transition-colors hover:text-golddeep">Terms of Service</Link>
+              <span className="text-body/30">·</span>
+              <Link to="/legal/cookie-policy" className="transition-colors hover:text-golddeep">Cookie Policy</Link>
+            </div>
           </motion.div>
         </div>
       </section>

@@ -178,6 +178,37 @@
   filter: blur(2px);
 }
 
+/* "agentically" — elegant italic serif with a slow gold shimmer */
+.agentically {
+  font-family: Georgia, 'Times New Roman', serif;
+  font-style: italic;
+  font-size: 1.15rem;
+  letter-spacing: 0.45em;
+  margin-top: 2px;
+  background: linear-gradient(90deg, #c99b3f 0%, #fcbc45 30%, #ffedbe 50%, #fcbc45 70%, #c99b3f 100%);
+  background-size: 220% 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: agentic-shimmer 5s ease-in-out infinite;
+}
+@keyframes agentic-shimmer {
+  0%,
+  100% {
+    background-position: 0% 50%;
+    opacity: 0.85;
+  }
+  50% {
+    background-position: 100% 50%;
+    opacity: 1;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .agentically {
+    animation: none;
+  }
+}
+
 /* QR scan-line sweep for product page phone mockup */
 @keyframes scanline {
   0%,

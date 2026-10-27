@@ -1,4 +1,5 @@
-import { Mail, Linkedin, Twitter, Facebook } from 'lucide-react';
+import { Mail, Linkedin, Twitter, Facebook, Sparkles } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 export default function TopBar() {
   return (
@@ -9,6 +10,13 @@ export default function TopBar() {
           <a href="mailto:contact@epcora.com" className="flex items-center gap-1.5 transition-colors hover:text-primary">
             <Mail size={12} className="text-secondary" /> contact@epcora.com
           </a>
+          <Link
+            to="/careers"
+            className="flex items-center gap-1.5 font-semibold text-golddeep transition-colors hover:text-primary"
+          >
+            <Sparkles size={12} /> We’re hiring
+            <span className="pulse-dot h-1.5 w-1.5 rounded-full bg-golddeep" />
+          </Link>
         </div>
         <div className="flex items-center gap-3">
           {[Linkedin, Twitter, Facebook].map((Icon, i) => (

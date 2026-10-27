@@ -103,7 +103,7 @@ export default function Footer() {
           <ul className="space-y-3 text-sm">
             <li><Link to="/#why-xbeyond" className="transition-colors hover:text-gold">Why EPCORA Stack</Link></li>
             <li><Link to="/#founder" className="transition-colors hover:text-gold">About Us</Link></li>
-            <li><Link to="/#contact" className="transition-colors hover:text-gold">Careers</Link></li>
+            <li><Link to="/careers" className="transition-colors hover:text-gold">Careers</Link></li>
             <li><Link to="/#contact" className="transition-colors hover:text-gold">Contact</Link></li>
           </ul>
         </div>
@@ -112,9 +112,9 @@ export default function Footer() {
           <h4 className="mb-5 font-display text-sm font-bold uppercase tracking-[0.2em] text-white">Legal</h4>
           <div className="mb-5 h-0.5 w-10 bg-secondary" />
           <ul className="space-y-3 text-sm">
-            <li><a href="#top" className="transition-colors hover:text-gold">Privacy Policy</a></li>
-            <li><a href="#top" className="transition-colors hover:text-gold">Terms of Service</a></li>
-            <li><a href="#top" className="transition-colors hover:text-gold">Cookie Policy</a></li>
+            <li><Link to="/legal/privacy-policy" className="transition-colors hover:text-gold">Privacy Policy</Link></li>
+            <li><Link to="/legal/terms-of-service" className="transition-colors hover:text-gold">Terms of Service</Link></li>
+            <li><Link to="/legal/cookie-policy" className="transition-colors hover:text-gold">Cookie Policy</Link></li>
           </ul>
         </div>
       </div>
@@ -126,6 +126,7 @@ export default function Footer() {
         <div className="font-display text-[10px] font-semibold uppercase tracking-[0.35em] text-white/50 [text-shadow:0_2px_6px_rgba(0,0,0,0.6)]">
           Engineer · Procure · Construct
         </div>
+        <div className="agentically">agentically</div>
       </div>
 
       <div className="mx-auto mt-10 flex max-w-7xl flex-col justify-between gap-3 border-t border-white/10 px-6 pt-6 text-xs text-white/40 sm:flex-row">

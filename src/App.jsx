@@ -20,6 +20,8 @@ import SmartWave from './pages/SmartWave';
 import SmartClass from './pages/SmartClass';
 import Products from './pages/Products';
 import ServiceComingSoon from './pages/ServiceComingSoon';
+import Legal from './pages/Legal';
+import Careers from './pages/Careers';
 
 function Home() {
   return (
@@ -77,6 +79,8 @@ export default function App() {
           <Route path="/products/smartwave" element={<SmartWave />} />
           <Route path="/products/smartclass" element={<SmartClass />} />
           <Route path="/services/:slug" element={<ServiceComingSoon />} />
+          <Route path="/legal/:doc" element={<Legal />} />
+          <Route path="/careers" element={<Careers />} />
         </Routes>
       </main>
       <Footer />
